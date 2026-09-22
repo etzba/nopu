@@ -4,6 +4,8 @@ WORKDIR /app
 
 COPY package.json ./
 COPY package-lock.json ./
+COPY index.js /app/index.js
+COPY . .
 
 RUN npm ci
 RUN npm run build

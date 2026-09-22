@@ -18,7 +18,7 @@ cleanup:
 # run container
 .PHONY: docker-run
 docker-run:
-	docker run --env PORT=5000 -t --rm  ${REPO}:${TAG}
+	docker run --env PORT=3000 -t --rm  ${REPO}:${TAG}
 
 # build \ push to dockerhub
 .PHONY: docker-build
